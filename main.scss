@@ -27,7 +27,7 @@ html, body {
 .container {
     display: grid;
     padding: 0;
-    grid-auto-rows: auto; 
+    grid-auto-rows: auto auto auto; 
     height: 100%;
 }
 
@@ -106,20 +106,16 @@ h1 {
     font-size: 24px;
 }
 
-
 footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 30px;
-    align-items: center;
-    
+    height: fit-content;
 }
+
 .attribution { 
     
     font-size: 11px; 
     text-align: center;
-    color: var(--Cyan)  ;
+    color: var(--Cyan);
+    justify-content:center ;
 }
 .attribution a { 
     color: var(--Bright-Yellow-Shade-1); 
@@ -133,7 +129,7 @@ footer {
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-template-columns: repeat(auto 1fr); 
-        grid-template-rows: auto 1fr; 
+        grid-template-rows: auto; 
         gap: 0px 0px; 
     }
     
@@ -182,6 +178,14 @@ footer {
         li {
             font-size: 1.5rem;
         }
+    }
+
+    footer {
+        background: white;
+        margin: auto;
+        grid-column: span 2;
+        justify-content: center;
+        
     }
 
 }
