@@ -4,6 +4,7 @@
   --Cyan-Shade-1: hsl(179, 47%, 52%);
   --Bright-Yellow: #c0df34;
   --Bright-Yellow-Shade-1: hsl(71, 58%, 53%);
+  --Bright-Yellow-Shade-2: hsl(71, 51%, 47%);
 
   //Neutral Color
   --Light-Gray: hsl(204, 43%, 93%);
@@ -81,6 +82,14 @@ main {
     border-radius: 0.5em;
     box-shadow: 0px 4px 7px #04887d;
     padding: 1em;
+    transition: all 0.5s;
+
+    &:hover {
+      background: var(--Bright-Yellow-Shade-1);
+    }
+    &:active {
+      background: var(--Bright-Yellow-Shade-2);
+    }
   }
 }
 
@@ -164,11 +173,6 @@ footer {
     button {
       font-size: 1.25em;
       margin-top: 2em;
-      transition: all 0.5s;
-
-      &:hover {
-        background: var(--Bright-Yellow-Shade-1);
-      }
     }
   }
   .bottom-section {
